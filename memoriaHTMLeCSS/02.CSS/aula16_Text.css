@@ -1,0 +1,23 @@
+#div1 {
+    color:blue;
+    text-align: center;
+    unicode-bidi: bidi-override; /*deixa as letras ao contrário, ou deveria deixar*/
+    text-transform: uppercase;
+}
+
+#div2 {
+    text-align: justify; /*fica tipo o world*/
+    direction: rtl; /*direção da direita para a esquerda*/
+    text-transform: capitalize; /*primeira letra de cada palavra maiúscula*/
+    letter-spacing: 5px; /*espaçamento entra as letras*/
+    word-spacing: 15px; /*espaçamento entra as palavras*/
+}
+
+a {
+    text-decoration: none; /*tira a linha em baixo do link*/
+}
+
+h2 {
+    text-decoration: underline;
+    text-indent: 50px; /*espaço do paragrafo*/
+}
