@@ -1,0 +1,26 @@
+#div1 {
+    display: inline; /*pega somente até o fim do conteudo*/
+    border: 3px solid #000000
+}
+
+#div2 {
+    display: inline; /*vai ficar do lado da div1*/
+    border: 3px solid #000000
+}
+
+#nnExiste {
+    display: none; /*auto explicativo*/
+}
+
+#div3 {
+    display: block; /*padrão; ocupa todo o espaço da linha*/
+    border: 3px solid #000000
+}
+
+#talvezExista {
+    visibility: hidden;
+}
+
+li {
+    display: inline; /*perde os pontos*/
+}
