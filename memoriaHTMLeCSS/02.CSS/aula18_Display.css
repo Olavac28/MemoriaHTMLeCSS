@@ -21,6 +21,12 @@
     visibility: hidden;
 }
 
+#div4 {
+    display: inline-block; /*aceita mudança de altura e largura, diferente do inline*/
+    height: 30px;
+    border: 3px solid #000000
+}
+
 li {
     display: inline; /*perde os pontos*/
 }
