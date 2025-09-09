@@ -1,0 +1,9 @@
+#div1 {
+    width: 800px; /*a div sempre terá 800px*/
+    border: 3px solid black;
+}
+
+#div2 {
+    max-width: 800px; /*a div só terá 800px quando a tela suportar 800px*/
+    border: 3px solid black;
+}
