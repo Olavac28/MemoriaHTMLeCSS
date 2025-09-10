@@ -1,6 +1,0 @@
-#div1 {
-    background-color: blueviolet;
-    width: 50%;
-    max-width: 500px; /*a div sempre vai ter 50% do tamanho da tela, mas isso só até ela chegar a 500px*/
-    height: 1000px;
-}

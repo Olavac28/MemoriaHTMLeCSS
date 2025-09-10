@@ -1,0 +1,10 @@
+h1 {
+    border: 4px solid greenyellow;
+    border-bottom: 7px groove rgb(255, 0, 0);
+}
+
+p {
+    border: 4px double burlywood;
+    border-radius: 30px;
+    text-align: center;
+}

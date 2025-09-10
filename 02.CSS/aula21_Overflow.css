@@ -1,0 +1,15 @@
+#div1 {
+    height: 100px;
+    overflow: hidden; /*esconde o que sobrar*/
+}
+
+#div2 {
+    height: 100px;
+    overflow: scroll; /*cria um scroll para o que sobrar*/
+}
+
+#div3 {
+    height: 100px;
+    overflow: auto; /*cria um scroll se necessário*/
+    overflow-y: hidden; /*esconde a scroll*/
+}
