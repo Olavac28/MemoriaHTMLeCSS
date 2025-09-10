@@ -1,0 +1,12 @@
+#container {
+    border: 3px solid black;
+    overflow: auto; /*ajusta para o lorem ficar com o mesmo height da img*/
+}
+
+#container img {
+    float: left; /*faz outros conteudos poderem ocupar o lado direito da imagem*/
+}
+
+#container h1 {
+    clear: both; /*nn segue mais o float*/
+}
