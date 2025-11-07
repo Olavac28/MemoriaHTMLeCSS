@@ -1,0 +1,12 @@
+#container {
+    display: flex;
+    justify-content: center; /*eixo horizontal*/
+    align-items: center; /*eixo vertical*/
+    height: 100vh; /*ocupa a tela toda*/
+    background-color: aqua;
+}
+
+#box {
+    background-color: lightgreen;
+    padding: 20px;
+}
