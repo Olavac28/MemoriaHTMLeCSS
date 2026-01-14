@@ -30,3 +30,13 @@
 li {
     display: inline; /*perde os pontos*/
 }
+
+/*
+        display: flex
+
+    justify-content:
+    flex-start (default); flex-end; center; space-between; space-around; space-evenly
+
+    align-items:
+    flex-start; flex-end; center; baseline; stretch (default)
+*/
