@@ -1,0 +1,47 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+.menu {
+    height: 50px;
+    background-color: rgb(185, 130, 58);
+}
+
+.main {
+    display: flex;
+    height: calc(100vh - 50px); /*pega o max da tela menos o menu*/
+}
+
+.esq {
+    width: 20%;
+    height: 100%; /*100% do elemento pai*/
+    background-color: aqua;
+}
+
+.dir {
+    flex: 1; /*completa o flex*/
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column; /*muda a direção do flex*/
+}
+
+.texto {
+    width: 100%;
+    height: 80%;
+    background-color: azure;
+}
+
+.texto textarea {
+    width: 100%;
+    height: 100%;
+    resize: none; /*remove o puxador*/
+    /*preenche*/
+    border: none;
+    outline: none;
+}
+
+.terminal {
+    flex: 1;
+    background-color: blue;
+}
