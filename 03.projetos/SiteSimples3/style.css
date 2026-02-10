@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: azure
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+}
+
+.lateral {
+    background-color: black;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.icone {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-solo {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.icone:hover,.icone-solo:hover {
+    background-color: rgb(132, 132, 132);
+    cursor: pointer;
+}
