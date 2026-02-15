@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>24</title>
+		<link type="text/css" rel="stylesheet" href="aula24.css" />
+		<script type="text/javascript" src=""></script>
+	</head>
+	
+	<body>
+        <div id="primeiro">#primeiro</div>
+        <script>
+            document.getElementById('primeiro').classList.add('aumenta'); //aciciona uma nova classe ao id
+
+            //remove uma classe de todas as divs
+            const divs = document.getElementsByTagName('div');
+            for(div of divs) //usar o of para arrays
+                div.classList.remove('aumenta'); 
+        </script>
+	</body>
+</html>
