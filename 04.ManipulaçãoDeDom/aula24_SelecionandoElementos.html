@@ -15,7 +15,7 @@
             document.getElementById('primeiro').classList.add('aumenta'); //aciciona uma nova classe ao id
 
             //remove uma classe de todas as divs
-            const divs = document.getElementsByTagName('div');
+            const divs = document.querySelectorAll('div');
             for(div of divs) //usar o of para arrays
                 div.classList.remove('aumenta'); 
         </script>
