@@ -1,0 +1,38 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+}
+
+#contador {
+    font-size: 50px;
+}
+
+#click {
+    border: 5px solid black;
+    width: 250px;
+    height: 70px;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+#click:hover {
+    cursor: pointer;
+}
