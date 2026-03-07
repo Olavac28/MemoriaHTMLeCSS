@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>JDRS</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src=""></script>
+	</head>
+	
+	<body>
+        <div id="jogo">
+            <div id="alvo" onmouseenter="muda()"></div>
+        </div>
+
+        <script>
+            const posi = document.getElementById('jogo');
+            const side = ['esq-cima', 'dir-cima', 'esq-baixo', 'dir-baixo'];
+            let chooseSide = side[Math.floor(Math.random() * side.length)];
+            posi.classList.add(chooseSide);
+
+            function muda() {
+                posi.classList.remove(chooseSide);
+                let temp = chooseSide;
+                do {
+                    chooseSide = side[Math.floor(Math.random() * side.length)];
+                } while(temp == chooseSide);
+                posi.classList.add(chooseSide);
+            }
+        </script>
+	</body>
+</html>
