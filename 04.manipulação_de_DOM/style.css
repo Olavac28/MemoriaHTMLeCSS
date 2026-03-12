@@ -13,3 +13,9 @@
     width: 100px;
     height: 100px;
 }
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px; /*o gap nn funciona se os iens tiverem tamanho fixo*/
+}
