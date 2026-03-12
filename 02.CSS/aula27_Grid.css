@@ -1,0 +1,28 @@
+.container {
+    background-color: darkslategrey;
+    display: grid;
+    grid-template-columns: auto auto; /*tamanho automatico; 2 itens lado a lado*/
+    gap: 20px; /*distancia entre os itens*/
+}
+
+.container2 {
+    background-color: darkslategrey;
+    display: grid;
+    grid-template-columns: 100px 200px 300px; /*tamanho(widith) definido; 3 itens lado a lado*/
+    gap: 20px;
+}
+
+.container3 {
+    background-color: darkslategrey;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /*tamanho em proporção; 2 itens lado a lado*/
+    gap: 20px;
+}
+
+.container4 {
+    background-color: darkslategrey;
+    display: grid;
+    /*                                            (tamanho mínimo, ocupa o espaço disponivel)*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*ajusta conforme o tamanho da tela*/
+    gap: 20px;
+}
