@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Prototipo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src=""></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="ask-box">
+				<span>Calcule:</span>
+				<span>1 + 1 = ?</span>
+				<div class="respostas">
+					<button onclick="opErrada(this)">1</button>
+					<button onclick="opCerta(this)" class="correta">2</button>
+					<button onclick="opErrada(this)">3</button>
+				</div>
+			</div>
+
+			<div class="ask-box">
+				<span>Calcule:</span>
+				<span>2 + 2 = ?</span>
+				<div class="respostas">
+					<button onclick="opErrada(this)">1</button>
+					<button onclick="opCerta(this)" class="correta">4</button>
+					<button onclick="opErrada(this)">3</button>
+				</div>
+			</div>
+
+			<div class="ask-box">
+				<span>Calcule:</span>
+				<span>3 + 3 = ?</span>
+				<div class="respostas">
+					<button onclick="opErrada(this)">1</button>
+					<button onclick="opCerta(this)" class="correta">6</button>
+					<button onclick="opErrada(this)">3</button>
+				</div>
+			</div>
+
+			<div class="ask-box">
+				<span>Calcule:</span>
+				<span>4 + 4 = ?</span>
+				<div class="respostas">
+					<button onclick="opErrada(this)">1</button>
+					<button onclick="opCerta(this)" class="correta">8</button>
+					<button onclick="opErrada(this)">3</button>
+				</div>
+			</div>
+
+			<div class="ask-box">
+				<span>Calcule:</span>
+				<span>5 + 5 = ?</span>
+				<div class="respostas">
+					<button onclick="opErrada(this)">1</button>
+					<button onclick="opCerta(this)" class="correta">10</button>
+					<button onclick="opErrada(this)">3</button>
+				</div>
+			</div>
+
+			<div class="ask-box">
+				<span>Calcule:</span>
+				<span>6 + 6 = ?</span>
+				<div class="respostas">
+					<button onclick="opErrada(this)">1</button>
+					<button onclick="opCerta(this)" class="correta">12</button>
+					<button onclick="opErrada(this)">3</button>
+				</div>
+			</div>
+		</div>
+
+		<script>
+				function opCerta(botao) {
+					botao.classList.add("certo");
+					desativarBotoes(botao);
+				}
+
+				function opErrada(botao) {
+					botao.classList.add("errado");
+					mostrarCorreta(botao);
+					desativarBotoes(botao);
+				}
+
+				function desativarBotoes(botao) {
+					const caixa = botao.closest(".ask-box");
+					const botoes = caixa.querySelectorAll("button");
+
+					botoes.forEach((botao) => {
+					botao.disabled = true;
+					});
+				}
+
+				function mostrarCorreta(botao) {
+					const caixa = botao.closest(".ask-box");
+					const botaoCerto = caixa.querySelector(".correta");
+
+					botaoCerto.classList.add("certo");
+				}
+		</script>
+	</body>
+</html>
