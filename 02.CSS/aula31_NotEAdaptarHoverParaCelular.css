@@ -1,0 +1,13 @@
+button {
+    width: 500px;
+    height: 500px;
+    font-size: 28px;
+    background-color: white;
+}
+
+@media(hover: hover) { /*adapita o hover para celular (tira)*/
+    button:hover:not(.nn-pode) { /*se botton estiver em hover e nn ter a classe .nn-pode*/
+        background-color: blue;
+        cursor: pointer;
+    }
+}
