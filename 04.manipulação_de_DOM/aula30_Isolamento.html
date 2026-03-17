@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>29</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src=""></script>
+	</head>
+	
+	<body>
+        <div class="container">
+            <button onclick="bnt1(this)">botão1 = 0</button>
+            <button class="segundo" onclick="bnt2(this)">botão2 = 0</button>
+        </div>
+        <div class="container">
+            <button onclick="bnt3(this)">botão3 = 0</button>
+            <button class="segundo" onclick="bnt4(this)">botão4 = 0</button>
+        </div>
+
+        <script>
+            let bot1 = 0;
+            let bot2 = 0;
+            let bot3 = 0;
+            let bot4 = 0;
+
+            function bnt1(botao) {
+                bot1++;
+                bot2++;
+
+                botao.innerHTML = "botao1 = " + bot1;
+
+                const caixa = botao.closest(".container");
+                const segundoBnt = caixa.querySelector(".segundo");
+                segundoBnt.innerHTML = "botao2 = " + bot2;
+            }
+
+            function bnt2(botao) {
+                bot2++;
+                botao.innerHTML = "botao 2 = " + bot2;
+            }
+        </script>
+	</body>
+</html>

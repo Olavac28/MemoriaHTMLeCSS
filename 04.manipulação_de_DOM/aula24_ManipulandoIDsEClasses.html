@@ -19,8 +19,9 @@
 
             //remove uma classe de todas as divs
             const divs = document.querySelectorAll('div');
-            for(div of divs) //usar o of para arrays
+            divs.forEach(div => {
                 div.classList.remove('aumenta'); 
+            });
         </script>
 
         <!----------------------------------------------------------------------------------------------------------------------->

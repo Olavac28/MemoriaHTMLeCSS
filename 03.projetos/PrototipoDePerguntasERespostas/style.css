@@ -16,9 +16,11 @@ button {
     border: 1px solid black;
 }
 
-button:hover {
-    cursor: pointer;
-    background-color: blue;
+@media(hover: hover) {
+        button:hover:not(.certo):not(.errado) {
+            cursor: pointer;
+            background-color: blue;
+    }
 }
 
 .certo {
