@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Remove Item</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src=""></script>
+	</head>
+	
+	<body>
+        <div class="container">
+            <div id="item1">1</div>
+            <div id="item2">2</div>
+            <div id="item3">3</div>
+            <div id="item4">4</div>
+            <div id="item5">5</div>
+        </div>
+
+        <div class="container">
+            <button onclick="toogle('item1')">des1</button>
+            <button onclick="toogle('item2')">des2</button>
+            <button onclick="toogle('item3')">des3</button>
+            <button onclick="toogle('item4')">des4</button>
+            <button onclick="toogle('item5')">des5</button>
+        </div>
+
+        <script>
+            const container = document.querySelector('.container');
+            const estado = {};
+
+            function toogle(id) {
+                const item = document.getElementById(id);
+
+                if(estado[id]) { //id agora é um campo do objeto estado
+                    item.style.display = 'block';
+                    estado[id] = false;
+                }
+                else {
+                    item.style.display = 'none';
+                    estado[id] = true;
+                }
+            }
+        </script>
+	</body>
+</html>
