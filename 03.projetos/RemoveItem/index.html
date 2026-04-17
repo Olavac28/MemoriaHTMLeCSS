@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Remove Item</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src=""></script>
+	</head>
+	
+	<body>
+        <div class="container">
+            <div id="item1">1</div>
+            <div id="item2">2</div>
+            <div id="item3">3</div>
+            <div id="item4">4</div>
+            <div id="item5">5</div>
+        </div>
+
+        <div class="container">
+            <button id="destroi1" onclick="des1()">des1</button>
+            <button id="destroi2" onclick="des2()">des2</button>
+            <button id="destroi3" onclick="des3()">des3</button>
+            <button id="destroi4" onclick="des4()">des4</button>
+            <button id="destroi5" onclick="des5()">des5</button>
+        </div>
+
+        <script>
+            const item1 = document.querySelector('.container #item1');
+            let destruido1 = false;
+
+            const item2 = document.querySelector('.container #item2');
+            let destruido2 = false;
+
+            const item3 = document.querySelector('.container #item3');
+            let destruido3 = false;
+
+            const item4 = document.querySelector('.container #item4');
+            let destruido4 = false;
+
+            const item5 = document.querySelector('.container #item5');
+            let destruido5 = false;
+
+            function des1() {
+                if(destruido1) {
+                    const container = document.querySelector('.container');
+                    container.append(item1);
+                    destruido1 = false;
+                }
+                else {
+                    item1.remove();
+                    destruido1 = true;
+                }
+            }
+            
+            function des2() {
+                if(destruido2) {
+                    const container = document.querySelector('.container');
+                    container.append(item2);
+                    destruido2 = false;
+                }
+                else {
+                    item2.remove();
+                    destruido2 = true;
+                }
+            }
+            
+            function des3() {
+                if(destruido3) {
+                    const container = document.querySelector('.container');
+                    container.append(item3);
+                    destruido3 = false;
+                }
+                else {
+                    item3.remove();
+                    destruido3 = true;
+                }
+            }
+            
+            function des4() {
+                if(destruido4) {
+                    const container = document.querySelector('.container');
+                    container.append(item4);
+                    destruido4 = false;
+                }
+                else {
+                    item4.remove();
+                    destruido4 = true;
+                }
+            }
+            
+            function des5() {
+                if(destruido5) {
+                    const container = document.querySelector('.container');
+                    container.append(item5);
+                    destruido5 = false;
+                }
+                else {
+                    item5.remove();
+                    destruido5 = true;
+                }
+            }
+            
+        </script>
+	</body>
+</html>
