@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start; /*consegue ajustar se a width for maior que a tela*/
+    align-items: center;
+    height: 100vh;
+    /*flex-wrap: wrap; //quebra linha*/
+    overflow-x: auto; /*scroll horizontal */
+}
+
+@media(max-width: 768px) { /*caso esteja no celular, faça isso*/
+    .box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+}
+
+.quadrado {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    margin: 10px;
+    flex-shrink: 0; /*nn deixa os quadrados diminuirem de tamanho para se adequarem a tela no flex*/
+}
